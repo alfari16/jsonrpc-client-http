@@ -1,0 +1,23 @@
+{
+  "name": "json-rpc-http",
+  "version": "0.6.0",
+  "description": "Send data through RPC using HTTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfari16/json-rpc-http.git"
+  },
+  "author": "alfari16",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfari16/json-rpc-http/issues"
+  },
+  "homepage": "https://github.com/alfari16/json-rpc-http#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10"
+  }
+}
