@@ -1,12 +1,10 @@
 import axios from "axios";
-import _ from 'lodash'
 
 const rpc = axios.create({});
-rpc.defaults = _.cloneDeep(axios.defaults)
-export const config = ({ id, method, params = {} }) => {
+export const query = ({ id = new Date().getTime(), method = null, jsonrpc = "2.0", params = {} }) => {
     return {
-        id: id || new Date().getTime(),
-        jsonrpc: "2.0",
+        id,
+        jsonrpc,
         method,
         params
     };
