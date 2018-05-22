@@ -1,20 +1,21 @@
-# Json-RPC HTTP
-Send data trough RPC using HTTP <br> Based on Axios
+# Json-RPC Client HTTP
+Send data trough RPC using HTTP based on Axios <br>
+Built for <b>Client Side<b>
 
 ## Installation
 
-> npm i --save json-rpc-http
+> npm i --save jsonrpc-client-http
 
 ## Basic usage
 ```
-import json-rpc-http from 'json-rpc-http'
+import jsonrpc-client-http from 'jsonrpc-client-http'
 
-json-rpc-http.post('https://rpc.domain.com', ({method:'getRequests'}))
+jsonrpc-client-http.post('https://rpc.domain.com', ({method:'getRequests'}))
 ```
 
 ## Custom Query
 ```
-import json-rpc-http,{query} from 'json-rpc-http'
+import jsonrpc-client-http,{query} from 'jsonrpc-client-http'
 
 const query = {
     method : 'getRequests', 
@@ -27,12 +28,12 @@ const query = {
     }
 }
 
-json-rpc-http.post('https://rpc.domain.com', query)
+jsonrpc-client-http.post('https://rpc.domain.com', query)
 ```
 
 ## Adding headers
 ```
-import json-rpc-http,{query} from 'json-rpc-http'
+import jsonrpc-client-http,{query} from 'jsonrpc-client-http'
 
 const query = {
     method : 'getRequests', 
@@ -52,7 +53,7 @@ const config = {
     }
 }
 
-json-rpc-http.post('https://rpc.domain.com', query, config)
+jsonrpc-client-http.post('https://rpc.domain.com', query, config)
 ```
 
 
@@ -60,11 +61,11 @@ json-rpc-http.post('https://rpc.domain.com', query, config)
 > You can use this plugin just like regular [axios](https://github.com/axios/axios) http request
 For convenience aliases have been provided for all supported request methods.
 
-json-rpc-http.request(config)
-json-rpc-http.get(url[, config])
-json-rpc-http.delete(url[, config])
-json-rpc-http.head(url[, config])
-json-rpc-http.options(url[, config])
-json-rpc-http.post(url[, data[, config]])
-json-rpc-http.put(url[, data[, config]])
-json-rpc-http.patch(url[, data[, config]])
+jsonrpc-client-http.request(config)
+jsonrpc-client-http.get(url[, config])
+jsonrpc-client-http.delete(url[, config])
+jsonrpc-client-http.head(url[, config])
+jsonrpc-client-http.options(url[, config])
+jsonrpc-client-http.post(url[, data[, config]])
+jsonrpc-client-http.put(url[, data[, config]])
+jsonrpc-client-http.patch(url[, data[, config]])

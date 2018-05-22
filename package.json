@@ -1,5 +1,5 @@
 {
-  "name": "json-rpc-http",
+  "name": "jsonrpc-client-http",
   "version": "0.6.0",
   "description": "Send data through RPC using HTTP",
   "main": "index.js",
