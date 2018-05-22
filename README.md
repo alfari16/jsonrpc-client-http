@@ -7,21 +7,21 @@ Built for <b>Client Side<b>
 > npm i --save jsonrpc-client-http
 
 ## Basic usage
-```
+```js
 import jsonrpc-client-http from 'jsonrpc-client-http'
 
 jsonrpc-client-http.post('https://rpc.domain.com', ({method:'getRequests'}))
 ```
 
 ## Custom Query
-```
+```js
 import jsonrpc-client-http,{query} from 'jsonrpc-client-http'
 
 const query = {
     method : 'getRequests', 
     id : new Date().getTime(), //default
     jsonrpc : "2.0",           //default
-    params : {                 // default will be {}
+    params : {                 //default will be {}
         requestId : 'blablabla',
         limit : 10,
         offset : 0
@@ -32,7 +32,7 @@ jsonrpc-client-http.post('https://rpc.domain.com', query)
 ```
 
 ## Adding headers
-```
+```js
 import jsonrpc-client-http,{query} from 'jsonrpc-client-http'
 
 const query = {
