@@ -1,6 +1,6 @@
 # Json-RPC Client HTTP
 Send data trough RPC using HTTP based on Axios <br>
-Built for <b>Client Side<b>
+Built for <b>Client Side
 
 ## Installation
 
@@ -61,11 +61,11 @@ jsonrpc-client-http.post('https://rpc.domain.com', query, config)
 > You can use this plugin just like regular [axios](https://github.com/axios/axios) http request
 For convenience aliases have been provided for all supported request methods.
 
-jsonrpc-client-http.request(config)
-jsonrpc-client-http.get(url[, config])
-jsonrpc-client-http.delete(url[, config])
-jsonrpc-client-http.head(url[, config])
-jsonrpc-client-http.options(url[, config])
-jsonrpc-client-http.post(url[, data[, config]])
-jsonrpc-client-http.put(url[, data[, config]])
-jsonrpc-client-http.patch(url[, data[, config]])
+##### jsonrpc-client-http.request(config)
+##### jsonrpc-client-http.get(url[, config])
+##### jsonrpc-client-http.delete(url[, config])
+##### jsonrpc-client-http.head(url[, config])
+##### jsonrpc-client-http.options(url[, config])
+##### jsonrpc-client-http.post(url[, data[, config]])
+##### jsonrpc-client-http.put(url[, data[, config]])
+##### jsonrpc-client-http.patch(url[, data[, config]])
