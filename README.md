@@ -1,5 +1,5 @@
 # Json-RPC Client HTTP
-Send data trough RPC using HTTP based on Axios <br>
+Send data through RPC using HTTP based on Axios <br>
 Built for <b>Client Side</b>
 
 ## Installation
