@@ -6,14 +6,14 @@ Send data trough RPC using HTTP <br> Based on Axios
 > npm i --save json-rpc-http
 
 ## Basic usage
-```
+```js
 import json-rpc-http from 'json-rpc-http'
 
 json-rpc-http.post('https://rpc.domain.com', ({method:'getRequests'}))
 ```
 
 ## Custom Query
-```
+```js
 import json-rpc-http,{query} from 'json-rpc-http'
 
 const query = {
@@ -31,7 +31,7 @@ json-rpc-http.post('https://rpc.domain.com', query)
 ```
 
 ## Adding headers
-```
+```js
 import json-rpc-http,{query} from 'json-rpc-http'
 
 const query = {
