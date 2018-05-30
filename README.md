@@ -8,14 +8,14 @@ Built for <b>Client Side</b>
 
 ## Basic usage
 ```js
-import jsonrpc-client-http from 'jsonrpc-client-http'
+import rpc from 'jsonrpc-client-http'
 
-jsonrpc-client-http.post('https://rpc.domain.com', ({method:'getRequests'}))
+rpc.post('https://rpc.domain.com', ({method:'getRequests'}))
 ```
 
 ## Custom Query
 ```js
-import jsonrpc-client-http,{query} from 'jsonrpc-client-http'
+import rpc,{query} from 'jsonrpc-client-http'
 
 const query = {
     method : 'getRequests', 
@@ -28,12 +28,12 @@ const query = {
     }
 }
 
-jsonrpc-client-http.post('https://rpc.domain.com', query)
+rpc.post('https://rpc.domain.com', query)
 ```
 
 ## Adding headers
 ```js
-import jsonrpc-client-http,{query} from 'jsonrpc-client-http'
+import rpc,{query} from 'jsonrpc-client-http'
 
 const query = {
     method : 'getRequests', 
@@ -53,7 +53,7 @@ const config = {
     }
 }
 
-jsonrpc-client-http.post('https://rpc.domain.com', query, config)
+rpc.post('https://rpc.domain.com', query, config)
 ```
 
 
@@ -61,11 +61,11 @@ jsonrpc-client-http.post('https://rpc.domain.com', query, config)
 > You can use this plugin just like regular [axios](https://github.com/axios/axios) http request
 For convenience aliases have been provided for all supported request methods.
 
-##### jsonrpc-client-http.request(config)
-##### jsonrpc-client-http.get(url[, config])
-##### jsonrpc-client-http.delete(url[, config])
-##### jsonrpc-client-http.head(url[, config])
-##### jsonrpc-client-http.options(url[, config])
-##### jsonrpc-client-http.post(url[, data[, config]])
-##### jsonrpc-client-http.put(url[, data[, config]])
-##### jsonrpc-client-http.patch(url[, data[, config]])
+##### rpc.request(config)
+##### rpc.get(url[, config])
+##### rpc.delete(url[, config])
+##### rpc.head(url[, config])
+##### rpc.options(url[, config])
+##### rpc.post(url[, data[, config]])
+##### rpc.put(url[, data[, config]])
+##### rpc.patch(url[, data[, config]])
